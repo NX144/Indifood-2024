@@ -1,6 +1,6 @@
-# Swift-IT_courses
+# IndiFood 2024
 Сделай себе клонирование проекта
-- git clone https://github.com/steffDev144/Swift-IT_courses.git (потом переходишь в эту папку)
+- git clone https://github.com/NX144/Indifood-2024.git (потом переходишь в эту папку)
 
 Установи глобальные данные
 - git config --global user.name "имя"
