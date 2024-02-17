@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
 }
 
 .container {
@@ -12,3 +13,4 @@
 
 @import "./fonts/fonst.scss";
 @import "./blocks/main-page.scss";
+@import "./blocks/forms.scss";
