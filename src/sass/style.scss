@@ -9,6 +9,7 @@
     margin: 0 auto;
 }
 
-
+@import "./vars/_colors.scss";
 @import "./fonts/fonst.scss";
-@import "./blocks/main-page.scss";
+@import "./blocks/_header.scss";
+@import "./blocks/_main-page.scss";
