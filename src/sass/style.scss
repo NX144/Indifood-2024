@@ -10,7 +10,9 @@
     margin: 0 auto;
 }
 
-
-@import "./fonts/fonst.scss";
-@import "./blocks/main-page.scss";
-@import "./blocks/forms.scss";
+@import "./vars/_colors.scss";
+@import "./fonts/_fonst.scss";
+@import "./blocks/_main-page.scss";
+@import "./blocks/_forms.scss";
+@import "./blocks/_header.scss";
+@import "./blocks/_main-page.scss";
