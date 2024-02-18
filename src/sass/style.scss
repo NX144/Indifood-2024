@@ -10,6 +10,10 @@
     margin: 0 auto;
 }
 
+textarea {
+    resize: none;
+}
+
 @import "./vars/_colors.scss";
 @import "./fonts/_fonst.scss";
 @import "./blocks/_main-page.scss";

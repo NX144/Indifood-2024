@@ -7,12 +7,73 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<div class="form">
-    <h1>Hello</h1>
-    <h2>Hello</h2>
-    <h3>Hello</h3>
-    <h4>Hello</h4>
-    <h5>Hello</h5>
-</div>
+<section class="form">
+    <div class="container">
+        <h3>Свяжитесь с нами</h3>
+        <p>Наша поддержка ответит на любой ваш вопрос в любое время и поможет вам.</p>
+        <form action="#">
+            <div class="form__wrapper">
+                <div class="form__item">
+                    <label for="userName" class="form__item_label">Имя</label>
+                    <input id="userName" name="userName" type="text" placeholder="Никита">
+                </div>
+                <div class="form__item">
+                    <label for="userPhone" class="form__item_label">Телефон</label>
+                    <input id="userPhone" name="userPhone" type="tel" placeholder="+7 (999) 999-99-99">
+                </div>
+                <div class="form__item">
+                    <label for="userEmail" class="form__item_label">E-mail</label>
+                    <input id="userEmail" name="userEmail" type="email" placeholder="example@email.com">
+                </div>
+                <div class="form__item">
+                    <label for="userMessage" class="form__item_label">Текст</label>
+                    <textarea name="userMessage" id="userMessage" maxlength="1000" placeholder="Комментарий"></textarea>
+                </div>
+            </div>
+            <button>Отправить заявку</button>
+            <p>Нажимая на кнопку, я соглашаюсь на <a href="/" target="_blank">обработку персональных данных</a> и с <a href="/" target="_blank">правилами пользования сайтом</a></p>
+        </form>
+    </div>
+</section>
+<section class="form">
+    <div class="container">
+        <h3>Свяжитесь с нами</h3>
+        <p>Наша поддержка ответит на любой ваш вопрос в любое время и поможет вам.</p>
+        <form action="#">
+            <div class="form__wrapper">
+                <div class="form__item">
+                    <label for="userName" class="form__item_label">Имя</label>
+                    <input id="userName" name="userName" type="text" placeholder="Никита">
+                </div>
+                <div class="form__item">
+                    <label for="userPhone" class="form__item_label">Телефон</label>
+                    <input id="userPhone" name="userPhone" type="tel" placeholder="+7 (999) 999-99-99">
+                </div>
+                <div class="form__item">
+                    <label for="userEmail" class="form__item_label">E-mail</label>
+                    <input id="userEmail" name="userEmail" type="email" placeholder="example@email.com">
+                </div>
+                <div class="form__item">
+                    <label for="userCity" class="form__item_label">Город</label>
+                    <select name="userCity" id="userCity">
+                        <option value="Уфа">Уфа</option>
+                        <option value="Москва">Москва</option>
+                    </select>
+                </div>
+                <div class="form__item">
+                    <label for="userFile" class="form__item_label">Прикрепить резюме</label>
+                    <input id="userFile" name="userFile" type="file" style="display: none">
+                    <label class="form__item_file" for="userFile">Выбрать файл</label>
+                </div>
+                <div class="form__item">
+                    <label for="userMessage" class="form__item_label">Текст</label>
+                    <textarea name="userMessage" id="userMessage" maxlength="1000" placeholder="Комментарий"></textarea>
+                </div>
+            </div>
+            <button>Отправить заявку</button>
+            <p>Нажимая на кнопку, я соглашаюсь на <a href="/" target="_blank">обработку персональных данных</a> и с <a href="/" target="_blank">правилами пользования сайтом</a></p>
+        </form>
+    </div>
+</section>
 </body>
 </html>

@@ -1,17 +1,126 @@
 .form {
-  h1 {
-    font-weight: 900;
-  }
-  h2 {
-    font-weight: 700;
-  }
+  margin-bottom: 120px;
   h3 {
-    font-weight: 500;
+    font-weight: 900;
+    font-size: 50px;
+    color: $accent;
   }
-  h4 {
-    font-weight: 400;
+  p {
+    font-weight: 700;
+    font-size: 32px;
+    color: $dark;
+    margin-top: 15px;
   }
-  h5 {
-    font-family: "Appetite", sans-serif;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    column-gap: 20px;
+    row-gap: 25px;
+  }
+  &__item {
+    &_label {
+      font-weight: 400;
+      font-size: 14px;
+      color: $white;
+    }
+    &_file {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+      height: 52px;
+      width: 100%;
+      padding: 0 30px;
+      margin-top: 8px;
+      background-color: $white;
+
+      color: $accent;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    &:last-child {
+      grid-column: 1/4;
+    }
+  }
+
+  form {
+    width: 100%;
+    margin-top: 80px;
+    background-color: $dark;
+    border-radius: 25px;
+    box-shadow: 0 3px 25px 0 rgba(58, 58, 58, 0.12);
+    padding: 90px 190px 120px;
+    input {
+      border-radius: 15px;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+      height: 52px;
+      width: 100%;
+      padding: 0 30px;
+      margin-top: 8px;
+
+      font-weight: 400;
+      font-size: 18px;
+      color: #767676;
+    }
+    select {
+      border-radius: 15px;
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+      height: 52px;
+      width: 100%;
+      padding: 0 30px;
+      margin-top: 8px;
+
+      font-weight: 700;
+      font-size: 18px;
+      color: #767676;
+      option {
+        font-weight: 700;
+        font-size: 18px;
+        color: #767676;
+      }
+    }
+    textarea {
+      margin-top: 8px;
+      border-radius: 15px;
+      width: 100%;
+      height: 120px;
+      padding: 18px 30px;
+
+      font-weight: 400;
+      font-size: 18px;
+      color: #767676;
+    }
+    button {
+      margin-top: 25px;
+      border-radius: 7px;
+      width: 272px;
+      height: 45px;
+      background-color: $accent;
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+
+      font-weight: 700;
+      font-size: 16px;
+      color: $white;
+
+      &:hover {
+        background-color: $white;
+        color: $accent;
+      }
+    }
+    p {
+      margin-top: 15px;
+      color: $white;
+      font-weight: 500;
+      font-size: 14px;
+      max-width: 480px;
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
   }
 }
