@@ -1,0 +1,49 @@
+.department-contacts {
+  margin: 120px 0 140px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  &__left {
+    h3 {
+      line-height: 130%;
+      letter-spacing: 0.02em;
+      color: $dark;
+    }
+    ul {
+      margin-top: 37px;
+      list-style-type: none;
+      width: 480px;
+      li {
+        margin-top: 17px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        color: $light;
+        display: flex;
+        justify-content: space-between;
+        span {
+          text-decoration: underline;
+          text-decoration-skip-ink: none;
+          color: $dark;
+        }
+      }
+    }
+  }
+  &__img {
+    width: 204px;
+    height: 204px;
+    background-color: #F2F3F5;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 151px;
+      height: 151px;
+    }
+  }
+}

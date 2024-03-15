@@ -1,0 +1,77 @@
+.wholesalers {
+  padding: 208px 0 265px 0;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: minmax(595px, 710px) 416px;
+    column-gap: 25px;
+    justify-content: space-between;
+
+  }
+  &__block {
+    &:last-child {
+      padding-top: 37px;
+    }
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    color: $white;
+    text-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
+  }
+  p {
+    margin-top: 46px;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    color: $white;
+    text-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
+  }
+  h2 {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    color: $white;
+    text-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
+  }
+  &__link {
+    display: flex;
+    text-decoration: none;
+    border: 3px solid $white;
+    border-radius: 15px;
+    width: max-content;
+    padding: 14px 40px;
+    align-items: center;
+    margin-top: 47px;
+
+    font-weight: 700;
+    font-size: 24px;
+    color: $white;
+
+    transition: all .3s ease-in-out;
+    &_img {
+      width: 24px;
+      height: 29px;
+      margin-right: 15px;
+      svg {
+        path {
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+    &:hover {
+      background-color: $white;
+      color: $dark;
+      .wholesalers__link_img {
+        svg {
+          path {
+            fill: $dark;
+          }
+        }
+      }
+    }
+  }
+}

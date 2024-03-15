@@ -1,0 +1,43 @@
+.requirements {
+  padding: 120px 0;
+  &__wrapper {
+    background: url("../img/bg/requirements_bg.png") center center/cover no-repeat;
+    border-radius: 15px;
+    padding: 50px 40px 60px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+    color: $white;
+    text-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+  }
+  ul {
+    list-style-type: none;
+    margin-top: 30px;
+    padding-left: 30px;
+    li {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      color: $white;
+      position: relative;
+      margin-top: 20px;
+      &::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        left: -28px;
+        top: 50%;
+        background-color: $white;
+        transform: translateY(-50%);
+        border-radius: 100%;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
