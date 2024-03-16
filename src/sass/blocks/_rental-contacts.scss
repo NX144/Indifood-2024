@@ -1,0 +1,39 @@
+.rental-contacts {
+  position: relative;
+  padding: 120px 0;
+  &__img {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  &__title {
+    color: $dark;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 34px;
+    color: $dark;
+    margin-top: 43px;
+    margin-bottom: 20px;
+  }
+  &__p {
+    font-weight: 700;
+    font-size: 30px;
+    color: $dark;
+    a {
+      color: $accent;
+      text-decoration: none;
+      transition: all .3s ease-in-out;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
