@@ -147,16 +147,52 @@
                     <div class="my-slide__main">
                         <h1>Инди<span>Фуд</span></h1>
                         <h2>Ваш надёжный поставщик мяса птицы и продукции глубокой переработки</h2>
-                        <a href="/">Перейти в каталог</a>
+                        <a class="my-slide__main_btn btn" href="/">Перейти в каталог</a>
                     </div>
                 </div>
                 <div class="my-slide" style="background: url(./img/main-bg2.jpg);">
-
+                    <div class="my-slide__main">
+                        <h1>Инди<span>Фуд</span></h1>
+                        <h2>Скачать презентацию <br> компании вы можете по <br> кнопке ниже</h2>
+                        <a href="./" download="filename" class="my-slide__main_btn btn">Скачать презентацию</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section ">Some section</div>
-        <div class="section">Some section</div>
+        <div class="section section-wrapper" style="background: url(./img/main-page1.jpg) center center / cover no-repeat;">
+            <div class="section-wrapper__transparent">
+                <div></div>
+            </div>
+            <div class="section-wrapper__block">
+                <p class="section-wrapper__block-title"><strong>Инди<span>Фуд</span></strong> — МСК филиал в г.Москва с собственым распределительным центром</p>
+            </div>
+        </div>
+        <div class="section section-wrapper" style="background: url(./img/main-page2.jpg) center center / cover no-repeat;">
+            <div class="section-wrapper__transparent">
+                <div></div>
+            </div>
+            <div class="section-wrapper__block">
+                <p>Реализация более <strong>1500 тонн</strong> в месяц свежего охлажденного  и замороженного мяса птицы</p>
+            </div>
+        </div>
+        <div class="section section-wrapper" style="background: url(./img/main-page3.jpg) center center / cover no-repeat;">
+            <div class="section-wrapper__transparent">
+                <div></div>
+            </div>
+            <div class="section-wrapper__block">
+                <p>
+                    <strong>Собственный цех</strong> по разделке мяса птицы и производству натуральных полуфабрикатов
+                </p>
+            </div>
+        </div>
+        <div class="section section-wrapper" style="background: url(./img/main-page4.jpg) center center / cover no-repeat;">
+            <div class="section-wrapper__transparent">
+                <div></div>
+            </div>
+            <div class="section-wrapper__block">
+                <p>Распределительный центр в пригороде Уфы, с пропускной способностью <strong>2500 тонн</strong> в месяц и с возможностью единовременного хранения до <strong>700 тонн</strong> продукции</p>
+            </div>
+        </div>
         <div class="section">
             <section class="advantages">
                 <div class="container">
@@ -495,18 +531,15 @@
             controlArrows: false,
             loopHorizontal: false,
             fitToSection: false,
+            navigationPosition: "left"
             // normalScrollElements: '.fg'
         });
-        // var swiper = new Swiper(".mySwiper", {
-        //     pagination: {
-        //         el: ".swiper-pagination",
-        //         clickable: true,
-        //     },
-        // });
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
                 items:1,
-                nav: true
+                margin: 0,
+                //nav: true
+                center: true
             });
         });
       </script>
