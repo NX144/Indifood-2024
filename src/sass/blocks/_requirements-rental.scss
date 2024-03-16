@@ -1,0 +1,49 @@
+.requirements-rental {
+  padding: 60px 0 90px;
+  background-color: $accent;
+  opacity: 0.7;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(530px, 1fr));
+    column-gap: 200px;
+    row-gap: 50px;
+    justify-content: space-between;
+  }
+  &__list {
+    &_title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      color: $white;
+      text-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+    }
+    ul {
+      list-style-type: none;
+      margin-top: 30px;
+      padding-left: 30px;
+      li {
+        position: relative;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 100%;
+        letter-spacing: 0.04em;
+        color: $white;
+        margin-top: 20px;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          border-radius: 100%;
+          background-color: $white;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+          width: 16px;
+          height: 16px;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -30px;
+        }
+      }
+    }
+  }
+}
