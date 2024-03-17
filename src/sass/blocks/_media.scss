@@ -1,0 +1,180 @@
+@media(max-width: 1800px) {
+    header {
+        .menu {
+            margin-left: 2%;
+            margin-right: 10%;
+        }
+    }
+}
+@media(max-width: 1700px) {
+    header {
+        padding: 0 80px;
+        .logo {
+            width: 85px;
+            height: 45px;
+        }
+        nav {
+            grid-template-columns: 100px 220px 1fr 180px;
+        }
+        .menu {
+            &__item {
+                .link {
+                    padding: 0 9px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1500px) {
+    header {
+        padding: 0 40px;
+    }
+}
+@media(max-width: 1400px) {
+    header {
+        padding: 0 30px;
+        nav {
+            grid-template-columns: 82px 205px 1fr 140px;
+        }
+        .logo {
+            width: 77px;
+            height: 41px;
+        }
+        .cities {
+            &__title {
+                font-size: 11px;
+            }
+        }
+        .menu {
+            margin-left: 1%;
+            margin-right: 10%;
+            &__item {
+                .link {
+                    padding: 0 6px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .feedback {
+            &__title {
+                margin-left: 7px;
+                font-size: 13px;
+            }
+        }
+        .submenu {
+            padding: 16px 24px 22px;
+            width: 310px;
+            &__item {
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1200px) {
+    header {
+        .menu {
+            display: none;
+        }
+        nav {
+            display: flex;
+        }
+        .block-hamburger {
+            cursor: pointer;
+            position: absolute;
+            width: 29px;
+            left: 30px;
+            display: block;
+            span {
+                display: block;
+                width: 100%;
+                height: 3px;
+                background: #FFFFFF;
+                border-radius: 8px;
+                margin-bottom: 6px;
+            }
+        }
+        .logo {
+            order: 3;
+            display: flex;
+            justify-content: center;
+            width: 104px;
+            height: 48px;
+        }
+        .cities {
+            order: 2;
+            margin-left: 40px;
+        }
+        .feedback {
+            order: 4;
+        }
+    }
+    
+    .header-menu {
+        display: block;
+        overflow: hidden;
+        height: 100vh;
+        position: fixed;
+        left: -330px;
+        // left: 0 !important;
+        z-index: 100;
+        width: 330px;
+        transition: all 0.55s ease-in-out;
+        z-index: 999;
+        &__nav {
+            position: relative;
+            height: 100vh;
+            overflow-y: scroll;
+            padding: 29% 0 0 23%;
+            background: #F0F0F4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__item {
+            width: max-content;
+            position: relative;
+            &-title {
+                margin-top: 21px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 20px;
+                color: $accent;
+                a {
+                    color: $accent;
+                    text-decoration: none;
+                }
+            }
+        }
+        &__list {
+            &_item {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                padding: 0 10px;
+                border-radius: 10px;
+                width: max-content;
+                height: 15px;
+                cursor: pointer;
+                transition: all .1s ease;
+                font-weight: 500;
+                a {
+                    transition: all .2s ease;
+                    text-decoration: none;
+                    color: $dark;
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+        &__close {
+            position: absolute;
+            right: 15px;
+            top: 92px;
+            cursor: pointer;
+        }
+    }
+}
+// @media(max-width: )

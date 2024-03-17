@@ -48,3 +48,14 @@
 // });
 
 
+const burgerBtn = document.querySelector(".block-hamburger");
+const menu = document.querySelector(".header-menu");
+const menuClose = document.querySelector(".header-menu__close");
+
+burgerBtn.addEventListener("click", (e) => {
+    menu.classList.add("header-menu-active");
+})
+
+menuClose.addEventListener("click", (e) => {
+    menu.classList.remove("header-menu-active");
+})

@@ -150,3 +150,13 @@ header {
         }
     }
 }
+.block-hamburger {
+    display: none;
+}
+.header-menu {
+    display: none;
+}
+.header-menu-active {
+    left: 0 !important;
+    width: 330px !important;
+}
