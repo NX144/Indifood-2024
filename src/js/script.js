@@ -59,3 +59,5 @@ burgerBtn.addEventListener("click", (e) => {
 menuClose.addEventListener("click", (e) => {
     menu.classList.remove("header-menu-active");
 })
+
+document.querySelector(".fp-watermark").remove();
