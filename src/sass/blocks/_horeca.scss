@@ -1,0 +1,36 @@
+.horeca {
+  padding-top: 100px;
+  position: relative;
+  &__img {
+	width: 490px;
+	height: 110px;
+	margin-bottom: 50px;
+	img {
+	  width: inherit;
+	  height: inherit;
+	  object-fit: cover;
+	}
+  }
+  &__wave {
+	position: absolute;
+	width: 1285px;
+	height: 358px;
+	left: 0;
+	top: 202px;
+	z-index: -1;
+	img {
+	  width: inherit;
+	  height: inherit;
+	  object-fit: cover;
+	  mix-blend-mode: multiply;
+	}
+  }
+  p {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 126%;
+	letter-spacing: 0.04em;
+	color: $dark;
+	width: 60%;
+  }
+}
