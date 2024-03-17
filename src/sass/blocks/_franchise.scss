@@ -1,0 +1,63 @@
+.franchise {
+  padding: 120px 0;
+  &__descr {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 121%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $dark;
+    width: 750px;
+    margin: 0 auto;
+    span {
+      font-weight: 900;
+      color: $accent;
+    }
+  }
+  &__slider {
+    margin-top: 75px;
+    .owl-item {
+      width: auto;
+      height: 280px;
+      border-radius: 15px;
+    }
+
+    &_item {
+      width: auto;
+      height: 280px;
+      border-radius: 15px;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+    }
+    .owl-dots {
+      width: max-content;
+      margin: 0 auto;
+      margin-top: 60px;
+    }
+    .owl-dot {
+      border-radius: 100%;
+      display: inline-block;
+      border: 1px solid $accent!important;
+      width: 23px;
+      height: 23px;
+      transition: all .3s ease-in-out;
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        background-color: $accent;
+        box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+    .active {
+      background-color: $accent!important;
+      box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
