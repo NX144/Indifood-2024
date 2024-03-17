@@ -1,0 +1,63 @@
+.vacancy {
+  position: relative;
+  padding: 200px 0;
+  &__img {
+    height: 93%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+  &__wrapper {
+    width: 73%;
+  }
+  &__cart {
+    &_title {
+      span {
+        color: $dark;
+      }
+    }
+    &_subtitle, &_address {
+      span {
+        font-weight: 500;
+      }
+    }
+    &_link {
+      width: 364px;
+    }
+  }
+  &__wrap {
+    margin-top: 80px;
+    &_title {
+      font-weight: 700;
+      font-size: 30px;
+      color: $dark;
+    }
+    &_list {
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 180%;
+      color: $dark;
+      padding-left: 30px;
+    }
+    &_job {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 180%;
+      color: $dark;
+      span {
+        width: 29px;
+        height: 22px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
