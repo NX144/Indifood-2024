@@ -159,3 +159,18 @@ footer {
         color: $white;
     }
 }
+
+.footer-menu__link img {
+    transition: 0.3s all ease-in-out;
+    width: 16px;
+    cursor: pointer;
+    display: none;
+    height: 8px;
+    user-select: none;
+    // opacity: .6;
+}
+
+.arrow-active {
+    transform: rotate(180deg);
+    // opacity: .6;
+}

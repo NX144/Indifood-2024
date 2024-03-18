@@ -48,16 +48,52 @@
 // });
 
 
-const burgerBtn = document.querySelector(".block-hamburger");
-const menu = document.querySelector(".header-menu");
-const menuClose = document.querySelector(".header-menu__close");
+// const burgerBtn = document.querySelector(".block-hamburger");
+// const menu = document.querySelector(".header-menu");
+// const menuClose = document.querySelector(".header-menu__close");
 
-burgerBtn.addEventListener("click", (e) => {
-    menu.classList.add("header-menu-active");
-})
+// burgerBtn.addEventListener("click", (e) => {
+//     menu.classList.add("header-menu-active");
+// })
 
-menuClose.addEventListener("click", (e) => {
-    menu.classList.remove("header-menu-active");
-})
+// menuClose.addEventListener("click", (e) => {
+//     menu.classList.remove("header-menu-active");
+// })
 
-document.querySelector(".fp-watermark").remove();
+// document.querySelector(".fp-watermark").remove();
+
+
+
+
+
+const footerItem = document.querySelectorAll(".footer-menu__item");
+
+    // const footerItemLinks = document.querySelectorAll(".footer__item-links");
+
+    // footerItemLinks.forEach(item => {
+    //     expandElement(item, 'footer__item-links-active');
+    // })
+
+    footerItem.forEach(item => {
+        // if(item.nextElementSibling.classList.contains("footer__item-links") && window.innerWidth < 768) {
+        //     expandElement(item, 'footer__item-links-active');
+        // }
+        item.addEventListener("click", (e) => {
+            if(window.innerWidth <= 786) {
+                // console.dir(e.target);
+                if(e.target && e.target.classList.contains("footer-menu__link")) {
+                    e.target.nextElementSibling.classList.toggle("footer__item-links-active");
+                    e.target.lastChild.previousSibling.classList.toggle("arrow-active");
+                    // console.log(e.target.lastChild)
+                }
+                else if(e.target && e.target.parentNode.classList.contains("footer-menu__link")) {
+                    e.target.classList.toggle("arrow-active");
+                    e.target.parentNode.nextElementSibling.classList.toggle("footer__item-links-active");
+                }
+            }
+                
+                
+                // const content = e.target.nextElementSibling;
+                // expandElement(content, 'footer__item-links-active');
+        })
+    })
