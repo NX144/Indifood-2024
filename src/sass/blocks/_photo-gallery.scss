@@ -1,0 +1,51 @@
+.photo-gallery {
+  border-radius: 25px;
+  background-color: $dark;
+  padding: 120px 0 166px;
+  &__title {
+	display: flex;
+	align-items: center;
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: $white;
+	&_img {
+	  width: 50px;
+	  height: 50px;
+	  margin-right: 25px;
+	  img {
+		width: inherit;
+		height: inherit;
+		object-fit: cover;
+	  }
+	}
+	span {
+	  position: relative;
+	  &::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 5px;
+		background-color: $accent;
+	  }
+	}
+  }
+  &__wrapper {
+	margin-top: 75px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+	grid-auto-rows: 300px;
+	column-gap: 40px;
+	row-gap: 30px;
+  }
+  &__img {
+	border-radius: 35px;
+	cursor: pointer;
+	img {
+	  border-radius: inherit;
+	}
+  }
+}
