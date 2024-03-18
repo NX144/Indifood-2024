@@ -1,4 +1,4 @@
-// window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", function() {
 //     [].forEach.call( document.querySelectorAll('.tel'), function(input) {
 //       var keyCode;
 //       function mask(event) {
@@ -45,28 +45,23 @@
 //     });
 //   });
   
-// });
+
+    const burgerBtn = document.querySelector(".block-hamburger");
+    const menu = document.querySelector(".header-menu");
+    const menuClose = document.querySelector(".header-menu__close");
+
+    burgerBtn.addEventListener("click", (e) => {
+        menu.classList.add("header-menu-active");
+    })
+
+    menuClose.addEventListener("click", (e) => {
+        menu.classList.remove("header-menu-active");
+    })
+
+    document.querySelector(".fp-watermark").remove();
 
 
-// const burgerBtn = document.querySelector(".block-hamburger");
-// const menu = document.querySelector(".header-menu");
-// const menuClose = document.querySelector(".header-menu__close");
-
-// burgerBtn.addEventListener("click", (e) => {
-//     menu.classList.add("header-menu-active");
-// })
-
-// menuClose.addEventListener("click", (e) => {
-//     menu.classList.remove("header-menu-active");
-// })
-
-// document.querySelector(".fp-watermark").remove();
-
-
-
-
-
-const footerItem = document.querySelectorAll(".footer-menu__item");
+    const footerItem = document.querySelectorAll(".footer-menu__item");
 
     // const footerItemLinks = document.querySelectorAll(".footer__item-links");
 
@@ -97,3 +92,32 @@ const footerItem = document.querySelectorAll(".footer-menu__item");
                 // expandElement(content, 'footer__item-links-active');
         })
     })
+
+
+    if(document.querySelectorAll('.contacts-info__tab')) {
+        const tabItems = document.querySelectorAll('.contacts-info__tab');
+        const tabBtns = document.querySelectorAll('.contacts-info__btns_btn');
+    
+    
+        tabBtns.forEach(item => {
+            if(item) {
+                item.addEventListener('click', () => {
+                    const index = item.getAttribute('data-tab');
+                    tabBtns.forEach(item => {
+                        item.classList.remove('contacts-info__btns_btn-active');
+                    });
+                    tabItems.forEach(item => {
+                        if(item.getAttribute('data-tab') === index) {
+                            item.classList.add('contacts-info__tab-active');
+                        } else {
+                            item.classList.remove('contacts-info__tab-active');
+                        }
+                    });;
+                    item.classList.add('contacts-info__btns_btn-active');
+                    console.log(index)
+                });
+            }
+        });
+    }
+
+});

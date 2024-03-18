@@ -1,0 +1,45 @@
+.contacts-connect {
+  padding: 120px 0;
+  &__wrapper {
+	position: relative;
+	background-color: #2F3035;
+	border-radius: 25px;
+	padding: 70px 110px 90px;
+  }
+  &__item {
+	width: 44%;
+  }
+  &__title {
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: $white;
+  }
+  &__subtitle {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: $white;
+	margin-top: 50px;
+	a {
+	  font-weight: 700;
+	  color: $white;
+	  text-decoration-skip-ink: none;
+	}
+  }
+  &__img {
+	position: absolute;
+	right: 144px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 240px;
+	height: 240px;
+	img {
+	  width: inherit;
+	  height: inherit;
+	  object-fit: cover;
+	}
+  }
+}

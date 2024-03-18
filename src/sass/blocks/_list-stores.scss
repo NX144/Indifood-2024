@@ -1,0 +1,28 @@
+.list-stores {
+  padding: 120px 0;
+  &__wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, max-content);
+	column-gap: 50px;
+	row-gap: 75px;
+	justify-content: space-between;
+  }
+  &__item {
+	&_title {
+	  font-weight: 700;
+	  font-size: 32px;
+	  line-height: 109%;
+	  letter-spacing: 0.04em;
+	  color: $accent;
+	}
+	ul {
+	  font-weight: 500;
+	  font-size: 20px;
+	  line-height: 175%;
+	  letter-spacing: 0.04em;
+	  color: $dark;
+	  margin-top: 10px;
+	  padding-left: 30px;
+	}
+  }
+}
