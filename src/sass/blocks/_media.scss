@@ -188,6 +188,34 @@
             width: 80%;
         }
     }
+    .wholesalers {
+        &__block {
+            h2 {
+                font-size: 30px;
+            }
+        }
+        &__link {
+            font-size: 20px;
+            margin-top: 20px;
+            span {
+                width: 20px;
+                height: 24px;
+            }
+        }
+    }
+    .horeca {
+        p {
+            width: 80%;
+        }
+        &__img {
+            width: 440px;
+            height: 99px;
+        }
+        &__wave {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 @media(max-width: 1200px) {
     header {
@@ -434,8 +462,62 @@
             }
         }
     }
+    .wholesalers {
+        &__wrapper {
+            display: block;
+        }
+        &__block {
+            h2 {
+                width: 55%;
+            }
+            p {
+                margin-top: 30px;
+            }
+            &:last-child {
+                padding-top: 40px;
+            }
+        }
+    }
+    .department-contacts {
+        &__img {
+            width: 160px;
+            height: 160px;
+            img {
+                width: 110px;
+                height: 110px;
+            }
+        }
+        h3 {
+            font-size: 36px;
+        }
+    }
+    .horeca {
+        p {
+            width: 100%;
+            font-size: 30px;
+        }
+    }
+    .retail-video {
+        h3 {
+            font-size: 36px;
+        }
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 @media(max-width: 992px) {
+
+    .horeca {
+        p {
+            font-size: 24px;
+        }
+        &__img {
+            width: 360px;
+            height: auto;
+        }
+    }
     .p__subtitle {
         font-size: 22px;
         width: 74%;
@@ -539,8 +621,65 @@
             }
         }
     }
+    .department-contacts {
+        &__img {
+            height: 110px;
+            width: 110px;
+            img {
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+    .photo-gallery {
+        &__title {
+            font-size: 37px;
+
+        }
+        &__img {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 @media(max-width: 768px) {
+    .photo-gallery {
+        padding: 80px 0;
+        &__title {
+            font-size: 26px;
+            &_img {
+                display: none;
+            }
+        }
+    }
+    .horeca {
+        padding: 80px 0 0;
+        p {
+            font-size: 15px;
+        }
+        &__img {
+            width: 280px;
+            margin-bottom: 20px;
+        }
+        &__wave {
+            display: none;
+        }
+    }
+    .retail-video {
+        padding: 80px 0;
+        &__wrapper {
+            margin-top: 30px;
+        }
+        h3 {
+            font-size: 26px;
+        }
+        &__img {
+            &_play {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
     .section-wrapper .fp-overflow {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -646,6 +785,46 @@
                     width: 20px;
                     height: 20px;
                 }
+            }
+        }
+    }
+    .wholesalers {
+        &__block {
+            h2 {
+                width: 100%;
+                font-size: 26px;
+            }
+        }
+    }
+    .department-contacts {
+        margin: 100px 0;
+        &__left {
+            h3 {
+                font-size: 30px;
+            }
+            ul {
+                width: 100%;
+                li {
+                    font-size: 19px;
+                }
+            }
+        }
+        &__img {
+            display: none;
+        }
+    }
+    .list-stores {
+        padding: 80px 0;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
+        &__item {
+            &_title {
+                font-size: 26px;
+            }
+            ul {
+                font-size: 18px;
             }
         }
     }
@@ -844,6 +1023,52 @@
     }
 }
 @media(max-width: 470px) {
+    .list-stores {
+        &__item {
+            &_title {
+                font-size: 19px;
+            }
+            ul {
+                padding-left: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+    .photo-gallery {
+        &__title {
+            font-size: 26px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .retail-video {
+        &__wrapper {
+            margin-top: 20px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        &__img {
+            &_play {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .horeca {
+        &__img {
+            width: 100%;
+        }
+    }
     .form {
         padding-bottom: 0;
         border-bottom: 2px solid silver;
@@ -851,7 +1076,7 @@
             width: 100%;
         }
         h3 {
-            font-size: 30px;
+            font-size: 23px;
             padding: 0 6%;
         }
         .p__subtitle {
@@ -887,10 +1112,30 @@
     .wholesalers {
         padding: 120px 0;
         h1 {
-            font-size: 30px;
+            font-size: 26px;
         }
         p {
             font-size: 14px;
+            margin-top: 20px;
+        }
+        &__block {
+            h2 {
+                font-size: 20px;
+            }
+
+        }
+        &__link {
+            width: 100%;
+            height: 45px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            span {
+                width: 18px;
+                height: 22px;
+            }
         }
 
     }
@@ -953,6 +1198,19 @@
             }
             &_job {
                 font-size: 14px;
+            }
+        }
+    }
+    .department-contacts {
+        margin: 80px 0;
+        h3 {
+            font-size: 21px;
+        }
+        ul {
+            margin-top: 20px;
+            li {
+                font-size: 13px;
+                margin-top: 10px;
             }
         }
     }

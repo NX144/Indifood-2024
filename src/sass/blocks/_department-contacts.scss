@@ -25,10 +25,13 @@
         color: $light;
         display: flex;
         justify-content: space-between;
-        span {
-          text-decoration: underline;
+        a {
           text-decoration-skip-ink: none;
           color: $dark;
+          transition: all .3s ease-in-out;
+          &:hover {
+            color: $accent;
+          }
         }
       }
     }

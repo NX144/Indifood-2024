@@ -16,21 +16,20 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	border: 4px solid $dark;
 	border-radius: 25px;
 	width: 950px;
 	height: 540px;
 	box-shadow: 2px 5px 4px 0 rgba(0, 0, 0, 0.25);
 	cursor: pointer;
+	img {
+	  width: inherit;
+	  height: inherit;
+	  object-fit: cover;
+	}
 	&_play {
 	  position: absolute;
 	  width: 116px;
 	  height: 116px;
-	  img {
-		width: inherit;
-		height: inherit;
-		object-fit: cover;
-	  }
 	}
   }
   &__bg {
