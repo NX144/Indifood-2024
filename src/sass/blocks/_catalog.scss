@@ -1,0 +1,201 @@
+.catalog-page {
+    width: 100%;
+    height: 560px;
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: .3s all ease-in-out;
+        object-fit: cover;
+        z-index: -1;
+        transform: scale(1.07);
+    }
+    &:hover {
+        img {
+            transform: scale(1);
+        }
+    }
+    .container {
+        z-index: 999;
+    }
+    &:hover {
+        transition: .3s all ease-in-out;
+    }
+    &__title {
+        padding-top: 220px;
+        font-weight: 900;
+        font-size: 64px;
+        margin-bottom: 20px;
+        color: $white;
+    }
+    &__subtitle {
+        width: 54%;
+        font-weight: 900;
+        color: $white;
+    }
+    &__indifood {
+        &:first-child {
+            color: $accent;
+        }
+        &:last-child {
+            color: $accent2;
+        }
+    }
+}
+.catalog {
+    margin-top: 80px;
+    margin-bottom: 200px;
+    &__title {
+        font-weight: 900;
+        font-size: 50px;
+        color: $dark;
+        margin-bottom: 50px;
+        column-gap: 55px;
+    }
+    &__wrap {
+        display: grid;
+        grid-template-columns: minmax(330px, 365px) 1fr;
+        column-gap: 70px;
+    }
+    &__filters {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.09);
+        border: 2px solid #f2f3f5;
+        height: max-content;
+        &_title {
+            padding: 17px 20px 17px 35px;
+            font-weight: 900;
+            font-size: 19px;
+            line-height: 100%;
+            letter-spacing: 0.04em;
+            color: $accent;
+        }
+        &_reset {
+            display: flex;
+            padding: 23px 0;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 100%;
+            letter-spacing: 0.04em;
+            text-decoration: underline;
+            color: $light;
+            cursor: pointer;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &_wrap {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+        }
+    }
+    &__filter {
+        width: 100%;
+        background-color: transparent;
+        padding: 17px 20px 17px 35px;
+        border-top: 3px solid #f2f3f5;
+        transition: .1s all;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.04em;
+        color: $dark;
+        &:last-child {
+            border-bottom: 3px solid #f2f3f5;
+        }
+        &:hover {
+            background-color: #f2f3f5;
+            color: $accent;
+        }
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 60px;
+        column-gap: 65px;
+        &_item {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__cart {
+        width: 100%;
+        height: 320px;
+        margin-bottom: 20px;
+        position: relative;
+        border-radius: 15px;
+        // border: 3px solid $dark;
+        box-shadow: 0px 0 12px rgba(0,0,0, .09);
+        cursor: pointer;
+        img {
+            // width: 100%;
+            // height: 100%;
+            width: 83%;
+            height: 79%;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: contain;
+            border-radius: 15px;
+        }
+        &_list {
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(133 125 103 / 50%);
+            border-radius: 15px;
+            padding-top: 80px;
+            padding-left: 14%;
+            transition: .3s all ease-in-out;
+        }
+        &_item {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: 0.04em;
+            margin-bottom: 15px;
+            color: $white;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: -20px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 11px;
+                height: 11px;
+                background-color: $accent;
+                border-radius: 50%;
+            }
+        }
+        &_title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0.04em;
+            color: $dark;
+            padding-left: 10px;
+        }
+        &:hover {
+            .catalog__cart_list {
+                opacity: 1;
+                overflow: visible;
+            }
+        }
+    }
+}
