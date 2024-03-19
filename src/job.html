@@ -7,7 +7,14 @@
 </head>
 <body>
 <header>
+
     <nav>
+        <div class="block-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
         <a href="/" class="logo" >
             <img src="./icons/logo.png" alt="logo">
         </a>
@@ -98,7 +105,7 @@
                 </ul>
             </li>
             <li class="menu__item">
-                <a class="link"  href="/">Вакансии</a>
+                <a class="link"  href="./job.html">Вакансии</a>
                 <ul class="submenu">
                     <li class="submenu__item">
                         <a href="/">г. Москва</a>
@@ -131,12 +138,13 @@
         </div>
     </nav>
 </header>
-<section class="wholesalers" style="background: url('./img/bg/job_bg.jpg') center center/cover no-repeat;">
+
+<section class="wholesalers wholesalers2" style="background: url('./img/bg/job_bg.jpg') center center/cover no-repeat;">
     <div class="container">
-        <div class="wholesalers__wrapper">
+        <div class="wholesalers__wrapper" style="display: block">
             <div class="wholesalers__block">
                 <h1>Вакансии</h1>
-                <p>Мы приглашаем вас присоединиться к нашей команде и рассмотреть вакансии наших предприятий</p>
+                <p style="width: 65%;">Мы приглашаем вас присоединиться к нашей команде и рассмотреть вакансии наших предприятий</p>
             </div>
         </div>
     </div>
@@ -160,7 +168,7 @@
         </div>
     </div>
 </section>
-<section class="form">
+<section class="form" id="form">
     <div class="container">
         <h3>Свяжитесь с нами</h3>
         <p class="p__subtitle">Наша поддержка ответит на любой ваш вопрос в любое время и поможет вам.</p>
@@ -201,6 +209,7 @@
         </form>
     </div>
 </section>
+
 <footer>
     <div class="container">
         <nav>
@@ -336,5 +345,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>
