@@ -89,6 +89,44 @@
     }
 }
 @media(max-width: 1400px) {
+    .contacts-connect {
+        &__wrapper {
+            padding: 60px 60px 90px;
+        }
+        &__img {
+            width: 200px;
+            height: 200px;
+        }
+        &__item {
+            width: 50%;
+        }
+    }
+    .contacts-info {
+        &__title {
+            font-size: 36px;
+        }
+        &__descr {
+            width: 67%;
+        }
+        &__tab {
+            &_map {
+                h3 {
+                    font-size: 36px;
+                }
+                iframe {
+                    height: 400px;
+                }
+            }
+            &_scheme {
+                h3 {
+                    font-size: 36px;
+                }
+                &-img {
+                    height: 400px;
+                }
+            }
+        }
+    }
     .region {
         &__wrapper {
             grid-auto-rows: 260px;
@@ -278,7 +316,42 @@
     }
 }
 @media(max-width: 1200px) {
-    
+    .contacts-connect {
+        &__item {
+            width: 62%;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__subtitle {
+            margin-top: 30px;
+        }
+        &__img {
+            width: 160px;
+            height: 160px;
+            right: 80px;
+        }
+    }
+    .contacts-info {
+        &__descr {
+            width: 81%;
+        }
+        &__tab {
+            &_list {
+                font-size: 18px;
+                li {
+                    column-gap: 15px;
+                }
+            }
+            &_title {
+                font-size: 36px;
+                span {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+    }
     .franchise {
         padding: 100px 0;
         &__descr {
@@ -630,7 +703,67 @@
     }
 }
 @media(max-width: 992px) {
-
+    .contacts-connect {
+        padding-top: 100px;
+        &__wrapper {
+            padding: 30px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__img {
+            width: 120px;
+            height: 120px;
+            right: 60px;
+        }
+    }
+    .contacts-info {
+        padding: 100px 0;
+        &__title {
+            font-size: 30px;
+        }
+        &__descr {
+            font-size: 18px;
+            width: 100%;
+        }
+        &__tab {
+            &_title {
+                margin-top: 60px;
+                font-size: 30px;
+                span {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            &_map {
+                margin-top: 80px;
+                h3 {
+                    font-size: 30px;
+                    margin-bottom: 40px;
+                }
+                iframe {
+                    height: 300px;
+                }
+            }
+            &_scheme {
+                margin-top: 80px;
+                h3 {
+                    font-size: 30px;
+                }
+                &-subtitle {
+                    font-size: 20px;
+                    margin-top: 20px;
+                }
+                &-img {
+                    height: 300px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
     .horeca {
         p {
             font-size: 24px;
@@ -777,6 +910,106 @@
     }
 }
 @media(max-width: 768px) {
+    .contacts-connect {
+        padding-top: 80px;
+        &__wrapper {
+            border-radius: 15px;
+            padding: 25px;
+        }
+        &__item {
+            width: 100%;
+            
+        
+        }
+        &__title {
+            font-size: 26px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__img {
+            display: none;
+        }
+    }
+    .contacts-info {
+        padding: 80px 0;
+        &__title {
+            font-size: 26px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+        &__btns {
+            &_btn {
+                font-size: 18px;
+            }
+        }
+        &__tab {
+            padding: 40px 0 0;
+            &_list {
+                font-size: 14px;
+                li {
+                    grid-template-columns: 90px 1fr;
+                    margin-top: 15px;
+                }
+            }
+            &_title {
+                font-size: 26px;
+                margin-top: 60px;
+                span {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            &_phones {
+                width: 100%;
+                font-size: 16px;
+                li {
+                    margin-top: 15px;
+                }
+                &-item2 {
+                    div {
+                        padding: 5px 0 10px 30px;
+                        p {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+            &_complaints {
+                width: 100%;
+                p {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+            }
+            &_map {
+                h3 {
+                    font-size: 26px;
+                    margin-bottom: 40px;
+                }
+                iframe {
+                    height: 210px;
+                }
+            }
+            &_scheme {
+                h3 {
+                    font-size: 26px;
+                }
+                iframe {
+                    height: 210px;
+                }
+                &-subtitle {
+                    font-size: 16px;
+                    margin-top: 20px;
+                }
+                &-img {
+                    margin-top: 20px;
+                    height: 210px;
+                }
+            }
+        }
+    }
     .franchise {
         padding: 80px 0;
         &__descr {
@@ -1224,6 +1457,89 @@
     }
 }
 @media(max-width: 470px) {
+    .contacts-connect {
+        padding-top: 60px;
+        &__title {
+            font-size: 20px;
+        }
+        &__subtitle {
+            font-size: 12px;
+        }
+    }
+    .contacts-info {
+        padding: 60px 0;
+        &__title {
+            font-size: 20px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__btns {
+            display: flex;
+            justify-content: center;
+            &_btn {
+                &:first-child {
+                    margin-right: 5px;
+                }
+            }
+        }
+        &__tab {
+            &_list {
+                font-size: 12px;
+            }
+            &_title {
+                font-size: 20px;
+                span {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            &_phones {
+                font-size: 12px;
+                &-item2 {
+                    div {
+                        padding-left: 20px;
+                    }
+                }
+            }
+            &_complaints {
+                p {
+                    font-size: 14px;
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        margin-top: 5px;
+                    }
+                }
+                &-link {
+                    width: 100%;
+                }
+            }
+            &_map {
+                margin-top: 60px;
+                h3 {
+                    font-size: 20px;
+                }
+                iframe {
+                    height: 180px;
+                }
+            }
+            &_scheme {
+                margin-top: 60px;
+                h3 {
+                    font-size: 18px;
+                }
+                &-subtitle {
+                    font-size: 12px;
+                    margin-top: 15px;
+                }
+                &-img {
+                    height: 180px;
+                }
+            }
+        }
+    }
     .franchise {
         padding: 60px 0;
         &__descr {
