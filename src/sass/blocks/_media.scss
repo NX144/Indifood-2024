@@ -63,6 +63,11 @@
     .advantages__wrapper {
         grid-template-columns: repeat(3, 1fr);
     }
+    .region {
+        &__wrapper {
+            grid-auto-rows: 300px;
+        }
+    }
 }
 @media(max-width: 1500px) {
     header {
@@ -84,6 +89,17 @@
     }
 }
 @media(max-width: 1400px) {
+    .region {
+        &__wrapper {
+            grid-auto-rows: 260px;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        }
+        &__item {
+            &_title {
+                font-size: 32px;
+            }
+        }
+    }
     .franchise {
         &__descr {
             width: 80%;
@@ -262,6 +278,7 @@
     }
 }
 @media(max-width: 1200px) {
+    
     .franchise {
         padding: 100px 0;
         &__descr {
@@ -491,13 +508,16 @@
     }
     .region {
         &__wrapper {
-            grid-auto-rows: 280px;
+            grid-auto-rows: 210px;
+            grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+        }
+        &__item {
+            &_title {
+                font-size: 28px;
+            }
         }
         p {
             width: 67%;
-        }
-        &__item {
-            height: 100%;
         }
     }
     .open-job {
@@ -743,6 +763,18 @@
             justify-content: center;
         }
     }
+    .region {
+        padding: 100px 0;
+        &__wrapper {
+            grid-auto-rows: 160px;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        }
+        &__item {
+            &_title {
+                font-size: 24px;
+            }
+        }
+    }
 }
 @media(max-width: 768px) {
     .franchise {
@@ -883,9 +915,9 @@
         }
     }
     .region {
-        padding: 100px 0;
+        padding: 80px 0;
         &__wrapper {
-            grid-auto-rows: 260px;
+            grid-auto-rows: 240px;
         }
         &__item_title {
             font-size: 34px;
